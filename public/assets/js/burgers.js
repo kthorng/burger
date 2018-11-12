@@ -24,11 +24,13 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+      if ($("#ca").val().trim() == ''){
+        alert("No burger added!")
+      }else {
       var newBurger = {
         name: $("#ca").val().trim()
       };
-  
+    
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
@@ -40,5 +42,6 @@ $(function() {
           location.reload();
         }
       );
+    }
     });
 });

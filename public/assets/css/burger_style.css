@@ -1,3 +1,7 @@
+.container {
+    background-color: #ffdf80;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -16,4 +20,9 @@ li {
   
   .form-group {
     margin-bottom: 5px;
+  }
+
+  #krab {
+    width:50%;
+    height: 230px;
   }
