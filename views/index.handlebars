@@ -1,22 +1,22 @@
 <div class="container">
-  <div class="row">
+  <div class="row" id="bottom">
     <div class="col-md-4">
       {{!-- offset space --}}
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <img src="/assets/img/Krabby_Patty.png" id="krab" alt="Krabby-Patty">
       <h1>Eat-Da-Burger!</h1>
     </div>
-
   </div>
+    <hr>
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-1">
     {{!-- offset space --}}
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-5">
     <h2>Burgers!</h2>
 
     <ul>
@@ -28,7 +28,7 @@
     </ul>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-5">
     <h2>DEVOURED!</h2>
 
     <ul>
@@ -40,22 +40,25 @@
     </ul>
   </div>
 </div>
+    <hr>
 
-<div class="row">
+<div class="row" id="bottom">
   <div class="col-md-4">
     {{!-- offset space --}}
   </div>
 
-  <div class="col-md-6">
-    <h2>Add-Da-Burger!</h2>
+  <div class="col-md-4">
+    
     <form class="create-form">
 
       <div class="form-group">
-        <label for="ca">Burger:</label>
-        <input type="text" id="ca" name="name">
+        <label for="ca"></label>
+        {{!-- <input type="text" id="ca" name="name"> --}}
+        <textarea class="form-control" rows="5" id="ca"></textarea>
       </div>
 
       <button type="submit">Submit</button>
+      <h3>Enter a burger you want to eat Click the "Submit" button</h3>
     </form>
   </div>
 </div>
