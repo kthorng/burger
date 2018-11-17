@@ -29,6 +29,7 @@ $(function() {
       }else {
       var newBurger = {
         name: $("#ca").val().trim()
+        // add devoured state, currently it defaults null
       };
     
       // Send the POST request.
